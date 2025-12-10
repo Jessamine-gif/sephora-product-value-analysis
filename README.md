@@ -21,7 +21,7 @@ This project analyzes real-world Sephora product and review data to study how **
 
 - Price and rating show only a **weak correlation**; expensive products do not necessarily earn higher satisfaction.  
 - Most brands fall into the **mid-range tier ($30–$60)**.  
-- Value scores vary substantially, and many premium/luxury brands perform poorly in rating-to-price efficiency.  
+- Value scores vary substantially, and many premium or luxury brands perform poorly in rating-to-price efficiency.  
 - Review volume does not strongly predict value.  
 - **Rosebud Perfume Co., Jack Black, and The Ordinary** rank among the strongest value-efficient brands.
 
@@ -47,12 +47,12 @@ Files Used:
 - Removing invalid entries  
 - Winsorizing extreme price values  
 - Brand name normalization  
-- Brand-level aggregation: rating, price, popularity, value score
+- Aggregating per-brand metrics (rating, price, popularity, value)
 
 ### Statistical Modeling
-- Weighted Least Squares (WLS)
+- Weighted Least Squares (WLS)  
 - Bootstrap confidence intervals  
-- LOWESS smoothing
+- LOWESS smoothing  
 
 ---
 
@@ -66,7 +66,6 @@ sephora-product-value-analysis/
 │
 ├── figures/
 │   ├── figure1_main_scatter.png
-│   ├── figure2_price_segments.png
 │   ├── figure3_reviews_vs_value.png
 │   └── figure4_top_value.png
 │
@@ -88,27 +87,23 @@ Figures will be saved into the **figures/** directory.
 ## 7. Visualizations
 
 ### **Figure 1 — Price vs Rating Scatter**
-![Price vs Rating Scatter](figures/figure1_main_scatter.png)
-
----
-
-### **Figure 2 — Price Tier Distribution**
-![Price Tier Distribution](figures/figure2_price_segments.png)
+<img src="figures/figure1_main_scatter.png" width="60%">
 
 ---
 
 ### **Figure 3 — Popularity vs Value**
-![Popularity vs Value](figures/figure3_reviews_vs_value.png)
+<img src="figures/figure3_reviews_vs_value.png" width="60%">
 
 ---
 
 ### **Figure 4 — Top 10 Best Value Brands**
-![Top Value Brands](figures/figure4_top_value.png)
+<img src="figures/figure4_top_value.png" width="60%">
 
 ---
 
 ## 8. Final Report
-A full written analysis is available in:
+
+A comprehensive written analysis is available in:
 
 **Sephora Product Value Analysis.pdf**
 
