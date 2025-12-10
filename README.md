@@ -1,6 +1,6 @@
 # Sephora Product Value Analysis
 
-Final project for **INFSCI 2415 (Data Analytics)**, University of Pittsburgh  
+Final project for **INFSCI 2415 (Information Visualization)**, University of Pittsburgh  
 Author: **Yingjing (Jessamine) Jiang**
 
 ---
@@ -25,7 +25,7 @@ This project analyzes real-world Sephora product and review data to study how **
 - Review volume does not strongly predict value.  
 - **Rosebud Perfume Co., Jack Black, and The Ordinary** rank among the strongest value-efficient brands.
 
-A complete written summary is available in the final PDF report.
+A complete written summary is available in the PDF report.
 
 ---
 
@@ -43,11 +43,11 @@ Files Used:
 ## 4. Methods
 
 ### Data Processing
-- Numeric conversion  
-- Removing invalid entries  
-- Winsorizing extreme price values  
-- Brand name normalization  
-- Aggregating per-brand metrics (rating, price, popularity, value)
+- Convert ratings and prices to numeric formats  
+- Remove invalid rows  
+- Winsorize price outliers (1st–99th percentile)  
+- Normalize brand names  
+- Aggregate brand-level stats (rating, price, review count, value score)
 
 ### Statistical Modeling
 - Weighted Least Squares (WLS)  
@@ -66,6 +66,7 @@ sephora-product-value-analysis/
 │
 ├── figures/
 │   ├── figure1_main_scatter.png
+│   ├── figure2_price_segments.png
 │   ├── figure3_reviews_vs_value.png
 │   └── figure4_top_value.png
 │
@@ -91,6 +92,11 @@ Figures will be saved into the **figures/** directory.
 
 ---
 
+### **Figure 2 — Price Tier Distribution (Pie Chart)**
+<img src="figures/figure2_price_segments.png" width="60%">
+
+---
+
 ### **Figure 3 — Popularity vs Value**
 <img src="figures/figure3_reviews_vs_value.png" width="60%">
 
@@ -103,8 +109,7 @@ Figures will be saved into the **figures/** directory.
 
 ## 8. Final Report
 
-A comprehensive written analysis is available in:
-
+Complete written report:  
 **Sephora Product Value Analysis.pdf**
 
 ---
@@ -115,4 +120,4 @@ A comprehensive written analysis is available in:
 M.S. in Information Science  
 University of Pittsburgh  
 
-This project reflects academic interests in statistical modeling, data visualization, and product evaluation.
+Interests include statistical modeling, data visualization, and product evaluation.
